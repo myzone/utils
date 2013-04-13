@@ -70,14 +70,14 @@
     <distributionManagement>
         <snapshotRepository>
             <id>myzones</id>
-            <url>http://178.137.14.241:8080/nexus-2.3.1-01/content/repositories/myzones</url>
+            <url>http://192.168.0.100:8080/nexus-2.3.1-01/content/repositories/myzones</url>
         </snapshotRepository>
     </distributionManagement>
 
     <repositories>
         <repository>
             <id>myzones</id>
-            <url>http://178.137.14.241:8080/nexus-2.3.1-01/content/repositories/myzones</url>
+            <url>http://192.168.0.100:8080/nexus-2.3.1-01/content/repositories/myzones</url>
         </repository>
         <repository>
             <id>central</id>
