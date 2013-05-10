@@ -17,8 +17,6 @@ import java.util.concurrent.atomic.AtomicLong;
  * immutable, and guaranteed not to have a null numerator or denominator.
  * Denominator will always be positive (so sign is carried by numerator,
  * and a zero-denominator is impossible).
- *
- * @author Kip Robinson, http://www.vacant-nebula.com
  */
 public final class BigFraction extends Number implements Comparable<Number> {
     /**
