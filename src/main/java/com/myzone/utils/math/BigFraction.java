@@ -19,24 +19,18 @@ import java.util.concurrent.atomic.AtomicLong;
  * and a zero-denominator is impossible).
  */
 public final class BigFraction extends Number implements Comparable<Number> {
-    /**
-     * The value 0/1.
-     */
-    public final static BigFraction ZERO = new BigFraction(BigInteger.ZERO, BigInteger.ONE, true);
-    /**
-     * The value 1/1.
-     */
-    public final static BigFraction ONE = new BigFraction(BigInteger.ONE, BigInteger.ONE, true);
-    /**
-     * The value 10/1.
-     */
-    public final static BigFraction TEN = new BigFraction(BigInteger.TEN, BigInteger.ONE, true);
+
     private static final long serialVersionUID = 2L; //because Number is Serializable
-    //some constants used
+
+    public final static BigFraction ZERO = new BigFraction(BigInteger.ZERO, BigInteger.ONE, true);
+    public final static BigFraction ONE = new BigFraction(BigInteger.ONE, BigInteger.ONE, true);
+    public final static BigFraction TEN = new BigFraction(BigInteger.TEN, BigInteger.ONE, true);
+
     private final static BigInteger BIGINT_TWO = BigInteger.valueOf(2);
     private final static BigInteger BIGINT_FIVE = BigInteger.valueOf(5);
     private final static BigInteger BIGINT_MAX_LONG = BigInteger.valueOf(Long.MAX_VALUE);
     private final static BigInteger BIGINT_MIN_LONG = BigInteger.valueOf(Long.MIN_VALUE);
+
     private final BigInteger numerator;
     private final BigInteger denominator;
 

@@ -1,4 +1,4 @@
-package com.myzone.utils;
+package com.myzone.utils.math;
 
 import com.myzone.utils.math.BigFraction;
 import org.junit.Test;
